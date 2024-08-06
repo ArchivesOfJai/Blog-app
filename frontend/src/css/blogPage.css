@@ -1,0 +1,39 @@
+.read-blog{
+    text-align: start;
+}
+
+.read-blog h2{
+    text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.read-blog p{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.read-blog img{
+    min-width: 100%;
+    min-height: 300px;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.read-blog .back-btn{
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    scale: .9;
+    margin-bottom: 10px;
+}
+
+.back-btn svg{
+  height: 100%;
+  width: 100%;
+  scale: 1.5;
+}

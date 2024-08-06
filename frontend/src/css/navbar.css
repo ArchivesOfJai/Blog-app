@@ -1,0 +1,46 @@
+.navbar{
+    background-color: #6482AD;
+}
+
+.navbar-brand{
+    color: #F5EDED !important;
+    font-size: 2.2vw;
+    font-weight: 500;
+    font-family: "McLaren", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar-brand:hover{
+  color: #F5EDED;
+}
+
+.search-box-container{
+  position: relative;
+  margin-right: 2rem;
+}
+.search-box-container input{
+  position: relative;
+  z-index: 95;
+}
+.search-box-container input:focus{
+  border: 1px solid grey;
+  box-shadow: none;
+}
+.search-result{
+  position: absolute;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  text-align: left;
+  padding-top: 15%;
+  padding-left: 5px;
+  border-radius: 10px;
+  z-index: 94;
+}
+.search-result li{
+  list-style: none;
+  text-transform: capitalize;
+}
+.search-result li:first-child{
+  margin-top: 5px;
+}

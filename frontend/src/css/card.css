@@ -1,0 +1,39 @@
+.card-img-top{
+    max-height: 200px;
+    overflow: hidden;
+}
+.read-more-link{
+    text-decoration: none;
+    margin-right:20% ;
+}
+.card-body h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+}
+.card-body p{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.delete-btn{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: relative;
+    left: 5rem;
+    bottom: .5rem;
+    border: none;
+}
+
+.delete-btn svg{
+    scale: 1.5;
+    color:#FF4C4C
+}
+
+.delete-btn svg:hover{
+    scale: 1.7;
+    filter: drop-shadow(0px 0px 1px black);
+    color:#FF1E1E
+}
