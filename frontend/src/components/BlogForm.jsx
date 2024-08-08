@@ -34,7 +34,12 @@ const BlogForm = ({ disableForm }) => {
   return (
     <form onSubmit={handleSubmit}>
       <div className="blog-form">
-      <button type="button" class="btn-close" onClick={disableForm}></button>
+        <div className="form-body">
+        <button
+          type="button"
+          className="btn-close"
+          onClick={disableForm}
+        ></button>
         <div className="row mb-3">
           <input
             type="text"
@@ -43,7 +48,7 @@ const BlogForm = ({ disableForm }) => {
             onChange={handleChange}
             required
             placeholder="Title"
-            className="form-control"
+            className="form-control input-data"
           />
         </div>
         <div className="row mb-3">
@@ -53,7 +58,7 @@ const BlogForm = ({ disableForm }) => {
             onChange={handleChange}
             required
             placeholder="Your content goes here"
-            className="form-control"
+            className="form-control input-data"
           />
         </div>
         <div className="row mb-3">
@@ -64,12 +69,15 @@ const BlogForm = ({ disableForm }) => {
             onChange={handleChange}
             required
             placeholder="enter the URL of the image"
-            className="form-control"
+            className="form-control input-data"
           />
         </div>
-        <button type="submit" className="btn btn-primary form-btn">
-          Submit
-        </button>
+        <div className=" submit-btn-div">
+          <button type="submit" className="btn btn-primary">
+            Submit
+          </button>
+        </div>
+        </div>
       </div>
     </form>
   );

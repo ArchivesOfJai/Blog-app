@@ -1,46 +1,78 @@
 .navbar{
     background-color: #6482AD;
+    position:fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
 }
 
 .navbar-brand{
     color: #F5EDED !important;
-    font-size: 2.2vw;
+    font-size: 2rem;
     font-weight: 500;
     font-family: "McLaren", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+
 .navbar-brand:hover{
-  color: #F5EDED;
+  text-shadow: 0px 0px 3px white;
+}
+.nav-icon{
+  width: 35px;
+  height: 35px;
+
 }
 
 .search-box-container{
-  position: relative;
-  margin-right: 2rem;
+  position: fixed;
+  right: 10px;
+  margin-right: 20px;
 }
-.search-box-container input{
-  position: relative;
-  z-index: 95;
+.search-box{
+  padding: 4px 30px 4px 12px ;
+  max-width: 200px;
+  border: none;
+  border-radius: 20px;
 }
-.search-box-container input:focus{
-  border: 1px solid grey;
-  box-shadow: none;
+.search-box:focus{
+outline: none;
 }
 .search-result{
   position: absolute;
-  background-color: white;
-  top: 0;
+  background-color: #5F6F65;
+  top: 110%;
   width: 100%;
   text-align: left;
-  padding-top: 15%;
-  padding-left: 5px;
+  padding-left: 8px;
+  /* padding-bottom: 5px; */
   border-radius: 10px;
   z-index: 94;
 }
 .search-result li{
   list-style: none;
+  color: white;
   text-transform: capitalize;
 }
 .search-result li:first-child{
   margin-top: 5px;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none !important;
+}
+.navbar-toggler{
+  scale: 1.3;
+  border: none;
+}
+
+.close-search{
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  z-index: 100;
+  font-size: .8rem;
+}
+.close-search:focus{
+  box-shadow: none;
 }

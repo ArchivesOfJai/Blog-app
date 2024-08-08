@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import BlogForm from "./components/BlogForm";
 import BlogList from "./components/BlogList";
+import Footer from "./components/Footer";
 import "./css/blogForm.css";
 
 function Home() {
@@ -26,6 +27,7 @@ function Home() {
       ) : (
       <button className="new-blog-btn" onClick={enableForm}></button>
       )}
+      <Footer/>
     </>
   );
 }

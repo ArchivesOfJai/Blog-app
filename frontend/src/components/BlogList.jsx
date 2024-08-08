@@ -45,7 +45,7 @@ const BlogList = () => {
     //   </div> */}
     // </div>
     <>
-    <div className="row blog-container mx-auto mt-5 pt-5">
+    <div className="row blog-container mx-auto mt-5 py-5">
     {blogs.map(blog => (
       <Card key={blog._id} blog={blog} onDelete={handleDelete} />
     ))}
